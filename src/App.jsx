@@ -45,6 +45,7 @@ const App = () => {
   const [loading, setLoading] = useState(false);
   const [expanded, setExpanded] = useState({}); 
 
+  //fecting data from api
   useEffect(() => {
     const fetchapi = async () => {
       if (!recipeName.trim()) {
@@ -96,22 +97,22 @@ const App = () => {
       </div>
 
       {/* Error, Loading, and No Results States */}
-      {error && <p className="text-red-500 mt-4">{error}</p>}
+      {error && <p className="text-red-600 mt-4">{error}</p>}
       {loading && (
         <div className="mt-6 flex flex-col items-center">
           <div className="spinner"></div>
-          <p className="text-[#F5A623] mt-2 text-lg">Loading...</p>
+          <p className="text-[#F5A623] mt-2 text-mono text-lg">Loading...</p>
         </div>
       )}
       {!loading && recipe.length === 0 && recipeName && (
-        <p className="text-[#FF6B6B] mt-6 text-lg">No recipe found for "{recipeName}"</p>
+        <p className="text-[#FF6B6B] mt-6 text-mono text-lg">No recipe found for "{recipeName}"</p>
       )}
 
       {/* Recipe List */}
       <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
         {recipe.map((val) => {
           const isExpanded = expanded[val.idMeal];
-          const description = val.strInstructions;
+          const description = val.strInstructions;//set the recipe in description
           const isLongDescription = description.length > 300; // Consider descriptions over 300 chars as "long"
 
           return (
@@ -154,7 +155,7 @@ const App = () => {
       </ul>
 
       {/* Footer */}
-      <footer className="mt-10 text-gray-500 text-sm">
+      <footer className="mt-10 text-gray-600 text-sm">
         made with ❤️ by AliyanA1
       </footer>
     </div>
