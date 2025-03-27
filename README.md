@@ -6,7 +6,7 @@ A modern, user-friendly web application built with React to search for recipes u
 
 ## ✨ Features
 
-- **Search Recipes**: Enter a recipe name to fetch matching recipes from TheMealDB API.
+- **Search Recipes**: Enter a recipe name to get matching recipes.
 - **Detailed Instructions**: View full recipe instructions with a scrollable description area and a "Show More/Show Less" toggle for long texts.
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices.
 - **Gitingest-Inspired UI**: Light cream background, pink accents, and a modern, playful aesthetic with rounded cards and subtle shadows.
@@ -19,11 +19,10 @@ A modern, user-friendly web application built with React to search for recipes u
 - **Tailwind CSS**: Utility-first CSS framework for styling.
 - **TheMealDB API**: Free API for fetching recipe data.
 - **Vite**: Build tool for fast development and production builds.
-- **Google Fonts**: Poppins font for the title.
 
 ## 🚀 Getting Started
 
-Follow these steps to set up and run the project locally.
+Here are the steps to set up and run the project locally.
 
 ### Prerequisites
 
