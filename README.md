@@ -9,7 +9,6 @@ A modern, user-friendly web application built with React to search for recipes u
 - **Search Recipes**: Enter a recipe name to get matching recipes.
 - **Detailed Instructions**: View full recipe instructions with a scrollable description area and a "Show More/Show Less" toggle for long texts.
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices.
-- **Gitingest-Inspired UI**: Light cream background, pink accents, and a modern, playful aesthetic with rounded cards and subtle shadows.
 - **Loading State**: A custom spinner with a "Loading..." message while fetching data.
 - **Error Handling**: Displays user-friendly error messages if the API request fails or no recipes are found.
 
